@@ -1,10 +1,10 @@
-# Simple Analyst Research API
+# Analyst Research API
 
-A simplified version of the Analyst Research API using LangGraph and OpenAI.
+A simplified implementation of a research system using LangGraph and OpenAI.
 
 ## Overview
 
-This project demonstrates a basic implementation of a research system using LangGraph. It creates AI analyst personas based on a topic, conducts interviews between the analysts and AI experts, and generates a comprehensive research report.
+This project demonstrates how to build an AI-powered research system using LangGraph. It creates AI analyst personas based on a topic, conducts interviews between the analysts and AI experts, and generates a comprehensive research report.
 
 ## Features
 
@@ -22,22 +22,18 @@ This project demonstrates a basic implementation of a research system using Lang
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/analyst-research-api.git
+git clone https://github.com/skanderkaroui/analyst-research-api.git
 cd analyst-research-api
 ```
 
 2. Create a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+venv\Scripts\activate  # On Windows
 ```
 
 3. Install dependencies:
 ```bash
-# For a minimal set of dependencies with known working versions
-pip install -r requirements-minimal.txt
-
-# Or for the full set of dependencies
 pip install -r requirements.txt
 ```
 
@@ -71,7 +67,11 @@ If you encounter dependency conflicts or errors like `ForwardRef._evaluate() mis
 ### Option 1: Run the FastAPI Server
 
 ```bash
-python app.py
+# Activate the virtual environment
+venv\Scripts\activate  # On Windows
+
+# Start the server
+uvicorn app.main:app --reload
 ```
 
 Then access the API at http://localhost:8000/docs
@@ -113,11 +113,11 @@ Response:
 
 ## Project Structure
 
-- `app.py`: FastAPI application
+- `app.py`: Original FastAPI application
+- `app/main.py`: Modular FastAPI application
 - `simple_test.py`: Simple test script for LangGraph
 - `analyst_test.py`: Implementation of the analyst research system
 - `requirements.txt`: Project dependencies
-- `requirements-minimal.txt`: Minimal set of dependencies with known working versions
 
 ## Troubleshooting
 
@@ -125,8 +125,8 @@ If you encounter any issues:
 
 1. Make sure your OpenAI API key is correctly set in the `.env` file
 2. Check that all dependencies are installed with the correct versions
-3. Try using the specific versions in `requirements-minimal.txt`
-4. Ensure you're using Python 3.8 or higher
+3. Ensure you're using Python 3.8 or higher
+4. If you see warnings about `json_schema` with GPT-3.5-turbo, these can be safely ignored
 
 ## Next Steps
 
@@ -136,3 +136,7 @@ Once this simplified version is working, you can:
 2. Implement caching to reduce API calls
 3. Add more sophisticated analyst personas and interview techniques
 4. Integrate with other data sources
+
+## Author
+
+[Skander Karoui](https://github.com/skanderkaroui)
