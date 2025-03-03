@@ -70,13 +70,13 @@ def create_joke(state: State) -> Dict[str, Any]:
     IMPORTANT STYLE GUIDELINES:
     - Use simple, everyday language (avoid big words or jargon)
     - Write short, clear sentences
-    - Use words that a 12-year-old would understand
+    - Use words that a 10-year-old would understand
     - Keep the structure of short paragraphs with line breaks
     - Maintain the absurdist humor but with simpler vocabulary
     - Still sound confident and matter-of-fact
 
     LENGTH REQUIREMENT:
-    - Your joke MUST be 8-12 paragraphs total (no more, no less)
+    - Your joke MUST be 8-10 paragraphs total (no more, no less)
     - Each paragraph should be 1-3 sentences
     - The total length should match the example jokes exactly"""
 
@@ -124,7 +124,7 @@ def create_joke(state: State) -> Dict[str, Any]:
 
     Instead, they just want one thing: being around zero snakes.
 
-    IMPORTANT: Your joke MUST be 8-12 paragraphs long, no more and no less. Count the paragraphs in your response before submitting. Each paragraph should be 1-3 short sentences with a line break between paragraphs."""
+    IMPORTANT: Your joke MUST be 8-10 paragraphs long, no more and no less. Count the paragraphs in your response before submitting. Each paragraph should be 1-3 short sentences with a line break between paragraphs."""
 
     msg = llm.invoke([
         SystemMessage(content=system_prompt),
@@ -144,8 +144,8 @@ def improve_joke(state: State) -> Dict[str, Any]:
     6. Avoid big words, jargon, or complex vocabulary
 
     LENGTH REQUIREMENT:
-    - The joke MUST be 8-12 paragraphs total (no more, no less)
-    - If the joke is already longer than 12 paragraphs, trim it down
+    - The joke MUST be 8-10 paragraphs total (no more, no less)
+    - If the joke is already longer than 10 paragraphs, trim it down
     - If the joke is shorter than 8 paragraphs, add a few more
     - Each paragraph should be 1-3 sentences
     - The total length should match the example jokes exactly"""
@@ -156,7 +156,7 @@ def improve_joke(state: State) -> Dict[str, Any]:
 
     Make sure it follows the structure of short paragraphs with line breaks between them, has a strong ending, and uses simple, everyday language that anyone can understand.
 
-    IMPORTANT: The final joke MUST be 8-12 paragraphs long, no more and no less. Count the paragraphs in your response before submitting."""
+    IMPORTANT: The final joke MUST be 8-10 paragraphs long, no more and no less. Count the paragraphs in your response before submitting."""
 
     msg = llm.invoke([
         SystemMessage(content=system_prompt),
@@ -176,8 +176,8 @@ def create_final_joke(state: State) -> Dict[str, Any]:
     6. Keep sentences short and clear
 
     STRICT LENGTH REQUIREMENT:
-    - The final joke MUST be exactly 8-12 paragraphs
-    - If it's longer than 12 paragraphs, you must trim it down
+    - The final joke MUST be exactly 8-10 paragraphs
+    - If it's longer than 10 paragraphs, you must trim it down
     - If it's shorter than 8 paragraphs, you must add more
     - Each paragraph should be 1-3 sentences
     - The total length should precisely match the example jokes"""
@@ -188,7 +188,7 @@ def create_final_joke(state: State) -> Dict[str, Any]:
 
     Make sure it has short paragraphs with line breaks between them, ends with a strong punchline or absurd conclusion, and uses simple language that anyone can understand.
 
-    CRITICAL: The final joke MUST be 8-12 paragraphs long, no more and no less. Count the paragraphs carefully before submitting."""
+    CRITICAL: The final joke MUST be 8-10 paragraphs long, no more and no less. Count the paragraphs carefully before submitting."""
 
     msg = llm.invoke([
         SystemMessage(content=system_prompt),
