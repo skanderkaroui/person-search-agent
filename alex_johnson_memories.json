@@ -1,0 +1,65 @@
+[
+  {
+    "key": "LinkedIn Response Style",
+    "content": "User prefers shorter responses for LinkedIn, concise and to the point.",
+    "importance": 9,
+    "last_accessed": "2025-03-04T09:13:18.877491",
+    "created_at": "2025-03-04T09:12:45.962947"
+  },
+  {
+    "key": "Feedback on improvement",
+    "content": "The response should not include repeated phrases or redundant information.",
+    "importance": 9,
+    "last_accessed": "2025-03-04T09:45:47.282021",
+    "created_at": "2025-03-04T09:45:47.282021"
+  },
+  {
+    "key": "LinkedIn response style",
+    "content": "User prefers concise responses without repetition or unnecessary phrases.",
+    "importance": 9,
+    "last_accessed": "2025-03-04T09:46:28.839463",
+    "created_at": "2025-03-04T09:46:28.839463"
+  },
+  {
+    "key": "Emoji Preference",
+    "content": "User wants to include a monkey emoji at the end of LinkedIn responses.",
+    "importance": 8,
+    "last_accessed": "2025-03-04T09:13:18.877491",
+    "created_at": "2025-03-04T09:13:18.877491"
+  },
+  {
+    "key": "LinkedIn response style preference",
+    "content": "Avoid using phrases like 'it's always inspiring' in responses.",
+    "importance": 8,
+    "last_accessed": "2025-03-04T09:45:10.339877",
+    "created_at": "2025-03-04T09:45:10.339877"
+  },
+  {
+    "key": "Response style preferences",
+    "content": "Avoid using phrases like 'it's always inspiring' and avoid repeating information already present in the original message.",
+    "importance": 8,
+    "last_accessed": "2025-03-04T09:45:47.282021",
+    "created_at": "2025-03-04T09:45:47.282021"
+  },
+  {
+    "key": "User communication preferences",
+    "content": "User does not like phrases that are inspirational or informal, such as 'it's always inspiring'.",
+    "importance": 8,
+    "last_accessed": "2025-03-04T09:46:28.839463",
+    "created_at": "2025-03-04T09:46:28.839463"
+  },
+  {
+    "key": "Communication Style",
+    "content": "Professional but approachable. Uses technical terminology appropriately but explains complex concepts clearly.",
+    "importance": 7,
+    "last_accessed": "2025-03-04T09:03:58.872831",
+    "created_at": "2025-03-04T09:03:58.872831"
+  },
+  {
+    "key": "User feedback",
+    "content": "User prefers responses that are straightforward and avoids redundancy, such as rephrasing statistics that are already mentioned.",
+    "importance": 7,
+    "last_accessed": "2025-03-04T09:46:28.839463",
+    "created_at": "2025-03-04T09:46:28.839463"
+  }
+]
